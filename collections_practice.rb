@@ -48,14 +48,12 @@ def find_a(arr)
 
 end
  
-
-#find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ]) #["apple", "avis", "arlo", "ascot"]
-
-def sum_array(array)
+#question 8
+def sum_array(arr)
   sum = 0
-  array.each do |num|
-    sum+=num
-  end
+  arr.each { |num|
+    sum+=num}
+  
   sum
 end 
   # using reduce method
