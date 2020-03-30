@@ -34,8 +34,7 @@ end
 
 #question 6
 def kesha_maker(arr)
-  arr.each { |item|
-    item[2] = "$"}
+  arr.each { |item| item[2] = "$"}
   
 end
 
