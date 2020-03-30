@@ -43,19 +43,18 @@ end
 #question 7
  
 def find_a(arr)
-  arr.find_all { |word|
-    word[0] == "a"}
+  arr.find_all { |word| word[0] == "a"}
 
 end
  
 #question 8
 def sum_array(arr)
   sum = 0
-  arr.each { |num|
-    sum+=num}
-  
+  arr.each { |num| sum+=num}
   sum
 end 
+
+
   # using reduce method
     # array.reduce(:+)
 
@@ -68,7 +67,7 @@ end
      # end
 
 
-sum_array([11,4,7,8,9,100,134]) #273
+#sum_array([11,4,7,8,9,100,134]) #273
 
 def add_s(array)
   array.collect do |word|
