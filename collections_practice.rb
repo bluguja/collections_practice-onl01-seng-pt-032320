@@ -28,20 +28,19 @@ end
 
 
 #question 5
-def reverse_array(array)
-  array.reverse
+def reverse_array(arr)
+  arr.reverse
 end
 
-#reverse_array(["blake", "ashley", "scott"]) #["scott", "ashley", "blake"]
 #question 6
-def kesha_maker(array)
-  array.each do |item|
+def kesha_maker(arr)
+  arr.each do |item|
     item[2] = "$"
   end
 end
 
-kesha_maker(["blake", "ashley", "scott"]) #["bl$ke", "as$ley", "sc$tt"]
 
+#question 7
 def find_a(array)
   array.find_all do |word|
     word[0] == "a"
