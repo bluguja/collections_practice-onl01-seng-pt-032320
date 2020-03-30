@@ -1,82 +1,89 @@
 #require 'pry'
-# 1
-def sort_array_asc(arr)
-   arr.sort
+def sort_array_asc(array)
+  array.sort
 end
 
-def sort_array_desc(arr)
-    arr.sort do | left, right |
+sort_array_asc([25, 7, 1]) #[1,7,25]
+
+def sort_array_desc(array)
+  array.sort do | left, right|
     right <=> left
-   end
- end
-  #2
- def sort_array_char_count(arr)
-    arr.sort do |from_left, to_right|
-    from_left.length <=> to_right.length
-   end
- end
-#binding.pry
-
-  #3
- def swap_elements(arr)
-   arr[1], arr[2] = arr[2], arr[1]
-   array
- end
-
-
-#4
- def reverse_array(arr)
-   arr.reverse
- end
-
-
-#5
-def kesha_maker(arr)
-   arr.each do |item|
-     item[2] = "$"
   end
 end
 
-#6
- def find_a(arr)
-   arr.find_all do |word|
-     word[0] == "a"
-   end
+sort_array_desc([25, 7, 14]) #[25, 14, 7]
 
-   # using select method
-     # array.select do |word|
-       word[0] == "a"
-     # end
- end
+def sort_array_char_count(array)
+  array.sort do |left, right|
+    left.length <=> right.length
+  end
+end
+
+sort_array_char_count(["dogs", "cat", "Horses"]) #["cat", "dogs", "Horses"]
+
+def swap_elements(array)
+  array[1], array[2] = array[2], array[1]
+  array
+end
+
+swap_elements(["blake", "ashley", "scott"]) #["blake", "scott", "ashley"]
+
+def reverse_array(array)
+  array.reverse
+end
+
+reverse_array(["blake", "ashley", "scott"]) #["scott", "ashley", "blake"]
+
+def kesha_maker(array)
+  array.each do |item|
+    item[2] = "$"
+  end
+end
+
+kesha_maker(["blake", "ashley", "scott"]) #["bl$ke", "as$ley", "sc$tt"]
+
+def find_a(array)
+  array.find_all do |word|
+    word[0] == "a"
+  end
+
+  # using select method
+    # array.select do |word|
+    #   word[0] == "a"
+    # end
+end
+
+find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ]) #["apple", "avis", "arlo", "ascot"]
 
 def sum_array(array)
-   sum = 0
+  sum = 0
   array.each do |num|
-     sum+=num
-   end
-   sum
- end 
+    sum+=num
+  end
+  sum
+end 
+  # using reduce method
+    # array.reduce(:+)
 
-#     # array.reduce(:+)
+  # using inject method (short)
+     # array.inject(:+)
 
-#   # using inject method (short)
-#     # array.inject(:+)
-
-#   # using inject method (long)
-#     # array.inject do |sum,x|
-#     #  sum + x
-#     # end
-
-
+  # using inject method (long)
+     # array.inject do |sum,x|
+     #  sum + x
+     # end
 
 
- def add_s(arr)
-   arr.collect do |word|
-    if arr[1] == word
+sum_array([11,4,7,8,9,100,134]) #273
+
+def add_s(array)
+  array.collect do |word|
+    if array[1] == word
       word
     else
       word + "s"
-     end
-   end
- end
+    end
+  end
+end
 
+add_s(["hand","feet", "knee", "table"]) #["hands","feet", "knees", "tables"]
