@@ -26,8 +26,8 @@ def swap_elements(arr)
   arr
 end
 
-swap_elements(["blake", "ashley", "scott"]) #["blake", "scott", "ashley"]
-
+#swap_elements(["blake", "ashley", "scott"]) #["blake", "scott", "ashley"]
+#question 5
 def reverse_array(array)
   array.reverse
 end
