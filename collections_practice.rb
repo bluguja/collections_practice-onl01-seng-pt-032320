@@ -41,15 +41,15 @@ end
 
 
 #question 7
-def find_a(arr)
-  arr.find_all do |word|
-    word[0] == "a"
-  end
+ def find_a(arr)
+#   arr.find_all do |word|
+#     word[0] == "a"
+#   end
 
-  # using select method
-    # array.select do |word|
-    #   word[0] == "a"
-    # end
+   using select method
+     arr.select do |word|
+       word[0] == "a"
+     end
 end
 
 find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ]) #["apple", "avis", "arlo", "ascot"]
