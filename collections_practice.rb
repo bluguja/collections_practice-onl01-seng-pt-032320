@@ -7,7 +7,7 @@ end
  
 #question 2
 def sort_array_desc(arr)
-  arr.sort do | fRom_left, to_right|
+  arr.sort do | from_left, to_right|
     to_right <=> from_left
   end
 end
