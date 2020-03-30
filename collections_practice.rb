@@ -41,19 +41,20 @@ end
 
 
 #question 7
- def find_a(arr)
-   arr.find_all do |word|
+ ef find_a(array)
+  array.find_all do |word|
     word[0] == "a"
-   end
+  end
 
-#   using select method
-#     arr.select do |word|
-#       word[0] == "a"
-#     end
-# end
+  # using select method
+    # array.select do |word|
+    #   word[0] == "a"
+    # end
+end
 
 find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ]) #["apple", "avis", "arlo", "ascot"]
 
+def sum_array(array)
 def sum_array(array)
   sum = 0
   array.each do |num|
