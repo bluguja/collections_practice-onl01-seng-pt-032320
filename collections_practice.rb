@@ -34,9 +34,9 @@ end
 
 #question 6
 def kesha_maker(arr)
-  arr.each do |item|
-    item[2] = "$"
-  end
+  arr.each { |item|
+    item[2] = "$"}
+  
 end
 
 
@@ -55,7 +55,7 @@ def sum_array(arr)
 end 
 
 
-  
+ #question 9 
 def add_s(arr)
   arr.collect do |word|
     if arr[1] == word
