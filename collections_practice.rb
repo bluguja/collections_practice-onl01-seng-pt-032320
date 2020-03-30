@@ -3,7 +3,7 @@ def sort_array_asc(array)
   array.sort
 end
 
-sort_array_asc([25, 7, 1]) #[1,7,25]
+#sort_array_asc([25, 7, 1]) 
 
 def sort_array_desc(array)
   array.sort do | left, right|
