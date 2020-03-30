@@ -56,13 +56,13 @@ end
 
 
   
-def add_s(array)
-  array.collect do |word|
+def add_s(arr)
+  array.collect { |word|
     if array[1] == word
       word
     else
-      word + "s"
-    end
+      word + "s"}
+    
   end
 end
 
