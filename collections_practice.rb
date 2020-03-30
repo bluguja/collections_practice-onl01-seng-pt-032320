@@ -14,10 +14,10 @@ end
 
 
 #question 3
-def sort_array_char_count(array)
-  array.sort do |left, right|
-    left.length <=> right.length
-  end
+def sort_array_char_count(arr)
+  arr.sort { |left, right|
+    left.length <=> right.length}
+  #end
 end
 
 sort_array_char_count(["dogs", "cat", "Horses"]) #["cat", "dogs", "Horses"]
