@@ -47,8 +47,8 @@ def find_a(arr)
     word[0] == "a"
    end
 
-   end
- end
+end
+ 
 
 find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ]) #["apple", "avis", "arlo", "ascot"]
 
