@@ -15,9 +15,9 @@ end
 
 #question 3
 def sort_array_char_count(arr)
-  arr.sort { |left, right|
-    left.length <=> right.length}
-  #end
+  arr.sort { |from_left, to_right|
+    from_left.length <=> to_right.length}
+  
 end
 
 sort_array_char_count(["dogs", "cat", "Horses"]) #["cat", "dogs", "Horses"]
