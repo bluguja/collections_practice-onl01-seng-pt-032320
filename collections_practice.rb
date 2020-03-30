@@ -1,13 +1,14 @@
 #require 'pry'
+# Question 1
 def sort_array_asc(arr)
   arr.sort
 end
 
  
-
-def sort_array_desc(array)
-  array.sort do | left, right|
-    right <=> left
+#question 2
+def sort_array_desc(arr)
+  arr.sort do | fRom_left, to_right|
+    to_right <=> from_left
   end
 end
 
