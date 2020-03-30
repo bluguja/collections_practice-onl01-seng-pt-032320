@@ -43,8 +43,8 @@ end
 #question 7
  
 def find_a(arr)
-  arr.find_all do |word|
-    word[0] == "a"
+  arr.find_all { |word|
+    word[0] == "a"}
    end
 
 end
