@@ -56,9 +56,9 @@ end
 
 
   
-def add_s(array)
-  array.collect do |word|
-    if array[1] == word
+def add_s(arr)
+  arr.collect do |word|
+    if arr[1] == word
       word
     else
       word + "s"
@@ -66,4 +66,4 @@ def add_s(array)
   end
 end
 
-add_s(["hand","feet", "knee", "table"]) #["hands","feet", "knees", "tables"]
+#add_s(["hand","feet", "knee", "table"]) #["hands","feet", "knees", "tables"]
