@@ -45,7 +45,6 @@ end
 def find_a(arr)
   arr.find_all { |word|
     word[0] == "a"}
-   end
 
 end
  
