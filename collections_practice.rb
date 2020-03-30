@@ -41,7 +41,7 @@ end
 
 
 #question 7
- ef find_a(array)
+ def find_a(array)
   array.find_all do |word|
     word[0] == "a"
   end
